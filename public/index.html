@@ -213,20 +213,20 @@
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Plan de precios</h2>
 
         <div class="flex flex-col sm:flex-row justify-center md:pt-12 my-12 sm:my-4">
-          <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
+          <div class="flex flex-col w-11/12 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
             <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
               <div class="p-8 text-3xl font-bold text-center border-b-4">Gratis</div>
               <ul class="w-full text-sm">
-                <li class="flex items-center border-b pl-4 py-4">
-                  <img class="mr-2 block" src="images/delete.png" width="24" />
+                <li class="flex pl-4 py-4">
+                  <img class="mr-2 block h-6" src="images/delete.png" height="24" />
                   Pacientes
                 </li>
-                <li class="flex items-center border-b pl-4 py-4">
-                  <img class="mr-2 block" src="images/delete.png" width="24" />
+                <li class="flex pl-4 py-4">
+                  <img class="mr-2 block h-6" src="images/delete.png" height="24" />
                   Colaboradores
                 </li>
-                <li class="flex items-center pl-4 py-4">
-                  <img class="mr-2 block" src="images/check.png" width="24" />
+                <li class="flex pl-4 py-4">
+                  <img class="mr-2 block h-6" src="images/check.png" height="24" />
                   Planes de comida ilimitados
                 </li>
               </ul>
@@ -239,47 +239,31 @@
             </div>
           </div>
 
-          <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <div class="w-full p-8 text-3xl font-bold text-center">Básico</div>
+          <div class="flex flex-col w-11/12 lg:w-1/3 mx-auto lg:mx-0 md:rounded-t-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
+            <div class="flex-1 bg-white rounded-t md:rounded-t-lg rounded-b-none overflow-hidden shadow">
+              <div class="w-full p-8 text-3xl font-bold text-center">Profesional</div>
               <div class="h-1 w-full bg-green-700 my-0 py-0"></div>
               <ul class="w-full text-base">
-                <li class="flex items-center border-b pl-4 py-4">
-                  <img class="mr-2 block" src="images/check.png" width="24" />
-                  8 pacientes
+                <li class="flex pl-4 py-4">
+                  <img class="mr-2 block h-6" src="images/check.png" height="24" />
+                  <div>
+                    Pacientes ilimitados.
+                    <div class="text-gray-500">
+                      Todos los que quieras 😄
+                    </div>
+                  </div>
                 </li>
-                <li class="flex items-center border-b pl-4 py-4">
-                  <img class="mr-2 block" src="images/check.png" width="24" />
-                  1 colaborador
+                <li class="flex pl-4 pr-4 py-4">
+                  <img class="mr-2 block h-6" src="images/check.png" height="24" />
+                  <div>
+                    5 colaboradores
+                    <div class="text-gray-500">
+                      Acceso al directorio y planes de comida para 5 miembros de tu gabinete 😄
+                    </div>
+                  </div>
                 </li>
-                <li class="flex items-center pl-4 py-4">
-                  <img class="mr-2 block" src="images/check.png" width="24" />
-                  Planes de comida ilimitados
-                </li>
-              </ul>
-            </div>
-            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div class="w-full pt-6 text-4xl font-bold text-center">8 € / mes</div>
-              <div class="flex items-center justify-center">
-                <a data-plan="basic" href="#form" class="js-scrollTo bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
-            <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-              <div class="p-8 text-3xl font-bold text-center border-b-4">Profesional</div>
-              <ul class="w-full text-sm">
-                <li class="flex items-center pl-4 py-4">
-                  <img class="mr-2 block" src="images/check.png" width="24" />
-                  Sin límite de pacientes
-                </li>
-                <li class="flex items-center pl-4 py-4">
-                  <img class="mr-2 block" src="images/check.png" width="24" />
-                  5 colaboradores
-                </li>
-                <li class="flex items-center pl-4 py-4">
-                  <img class="mr-2 block" src="images/check.png" width="24" />
+                <li class="flex pl-4 py-4">
+                  <img class="mr-2 block h-6" src="images/check.png" height="24" />
                   Planes de comida ilimitados
                 </li>
               </ul>
@@ -287,7 +271,33 @@
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
               <div class="w-full pt-6 text-4xl font-bold text-center">12 € / mes</div>
               <div class="flex items-center justify-center">
-                <a data-plan="professional" href="#form" class="js-scrollTo bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
+                <a data-plan="professional" href="#form" class="js-scrollTo bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col w-11/12 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
+            <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="p-8 text-3xl font-bold text-center border-b-4">Básico</div>
+              <ul class="w-full text-sm">
+                <li class="flex pl-4 py-4">
+                  <img class="mr-2 block h-6" src="images/check.png" height="24" />
+                  8 pacientes
+                </li>
+                <li class="flex pl-4 py-4">
+                  <img class="mr-2 block h-6" src="images/check.png" height="24" />
+                  1 colaborador
+                </li>
+                <li class="flex pl-4 py-4">
+                  <img class="mr-2 block h-6" src="images/check.png" height="24" />
+                  Planes de comida ilimitados
+                </li>
+              </ul>
+            </div>
+            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+              <div class="w-full pt-6 text-4xl font-bold text-center">8 € / mes</div>
+              <div class="flex items-center justify-center">
+                <a data-plan="basic" href="#form" class="js-scrollTo bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
               </div>
             </div>
           </div>
