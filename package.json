@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,10 @@
     "url": "https://github.com/andresgutgon/reciperi-landing/issues"
   },
   "homepage": "https://github.com/andresgutgon/reciperi-landing#readme",
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "9.6.4",
     "postcss-cli": "6.1.3",
-    "tailwindcss": "1.1.2"
+    "tailwindcss": "1.1.2",
+    "gh-pages": "2.0.1"
   }
 }
