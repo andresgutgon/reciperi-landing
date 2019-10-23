@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -7,7 +10,8 @@
     <title>Reciperi - Planes de comida</title>
     <meta name="description" content="Planes de comida y directorio de pacientes para nutricionistas">
     <meta name="keywords" content="Planes de comida, herramienta, directorio de pacientes">
-    <meta name="author" content="">
+    <meta name="author" content="Andres Gutierrez">
+    <!--<meta http-equiv="refresh" content="0;URL=http://www.yourwebsite.com/"/>-->
 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
@@ -37,6 +41,15 @@
         background: linear-gradient(90deg, #38a169 0%, #68d391 100%);
       }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150742376-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150742376-1');
+    </script>
   </head>
 
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
@@ -49,31 +62,6 @@
         <h1 class="my-4 text-3xl md:text-5xl font-bold leading-tight">Planes de comidas para tus pacientes</h1>
         <p class="leading-normal text-xl mb-8 text-green-200">Organiza tu directorio de pacientes y crea planes de comidas para cada uno de ellos</p>
         <a data-plan="hero" href="#form" class="js-scrollTo mx-auto lg:mx-0 bg-white text-xl text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg">Apúntate a la lista</a>
-        <!-- Begin Mailchimp Signup Form -->
-        <!--<form action="https://hotmail.us20.list-manage.com/subscribe/post?u=25c39b1fa44e1a96cda333a95&amp;id=903efea3d3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="w-full max-w-lg" target="_blank">-->
-          <!--<div class="mc-field-group">-->
-            <!--<label for="mce-EMAIL">Tu email</label>-->
-            <!--<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">-->
-          <!--</div>-->
-          <!--<div class="mc-field-group">-->
-            <!--<label for="mce-LNAME">Tu nombre</label>-->
-            <!--<input type="text" value="" name="LNAME" class="" id="mce-LNAME">-->
-          <!--</div>-->
-          <!--<div class="mc-field-group">-->
-            <!--<label for="mce-MMERGE1">Idioma</label>-->
-            <!--<select name="MMERGE1" class="required" id="mce-MMERGE1">-->
-              <!--<option value=""></option>-->
-              <!--<option value="English">English</option>-->
-              <!--<option value="Spanish">Spanish</option>-->
-            <!--</select>-->
-          <!--</div>-->
-          <!--[> real people should not fill this in and expect good things - do not remove this or risk form bot signups<]-->
-          <!--<div style="position: absolute; left: -5000px;" aria-hidden="true">-->
-            <!--<input type="text" name="b_25c39b1fa44e1a96cda333a95_903efea3d3" tabindex="-1" value="">-->
-          <!--</div>-->
-          <!--<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">-->
-        <!--</form>-->
-        <!--End mc_embed_signup-->
       </div>
       <!--Right Col-->
       <div class="flex justify-center w-full md:w-3/5 py-6 mb-10 text-center">
@@ -215,7 +203,7 @@
         <div class="flex flex-col sm:flex-row justify-center md:pt-12 my-12 sm:my-4">
           <div class="flex flex-col w-11/12 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
             <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-              <div class="p-8 text-3xl font-bold text-center border-b-4">Gratis</div>
+              <div class="p-8 text-3xl font-bold text-center border-b-4">Personal</div>
               <ul class="w-full text-sm">
                 <li class="flex pl-4 py-4">
                   <img class="mr-2 block h-6" src="images/delete.png" height="24" />
@@ -234,7 +222,7 @@
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
               <div class="w-full pt-6 text-3xl font-bold text-center">0 €</div>
               <div class="flex items-center justify-center">
-                <a data-plan="free" href="#form" class="js-scrollTo bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
+                <a data-plan="free" href="#form" class="js-scrollTo data-plan='personal' bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
               </div>
             </div>
           </div>
@@ -269,9 +257,9 @@
               </ul>
             </div>
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div class="w-full pt-6 text-4xl font-bold text-center">12 € / mes</div>
+              <div class="w-full pt-6 text-4xl font-bold text-center">20 € / mes</div>
               <div class="flex items-center justify-center">
-                <a data-plan="professional" href="#form" class="js-scrollTo bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
+                <a data-plan="professional" href="#form" data-plan='professional' class="js-scrollTo bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
               </div>
             </div>
           </div>
@@ -295,9 +283,9 @@
               </ul>
             </div>
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div class="w-full pt-6 text-4xl font-bold text-center">8 € / mes</div>
+              <div class="w-full pt-6 text-4xl font-bold text-center">10 € / mes</div>
               <div class="flex items-center justify-center">
-                <a data-plan="basic" href="#form" class="js-scrollTo bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
+                <a data-plan="basic" href="#form" data-plan='basic' class="js-scrollTo bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">Probarlo</a>
               </div>
             </div>
           </div>
@@ -328,30 +316,32 @@
       <h3 class="my-4 mb-10 text-center text-2xl md:text-3xl leading-tight">Cuando tengamos la primera versión lista te inviaremos un invitación.</h3>
 
       <div class="flex flex-col items-center">
-        <form class="w-full max-w-lg">
+        <!-- Begin Mailchimp Signup Form -->
+        <form class="w-full max-w-lg" action="https://hotmail.us20.list-manage.com/subscribe/post?u=25c39b1fa44e1a96cda333a95&amp;id=903efea3d3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <input  id="mce-PLAN" name="PLAN" type="hidden" value="LOL" />
           <div class="flex flex-wrap -mx-3">
             <div class="w-full px-3 mb-6 md:mb-0">
-              <label class="block tracking-wide text-green-200 text-xl mb-2" for="grid-first-name">
+              <label for="mce-EMAIL" class="block tracking-wide text-green-200 text-xl mb-2">
                 Tu email
               </label>
-              <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded md:mb-6 py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="ana@gmail.com">
+              <input  id="mce-EMAIL" name="EMAIL" type="email" placeholder="ana@gmail.com"required class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded md:mb-6 py-3 px-4 leading-tight focus:outline-none focus:bg-white">
             </div>
           </div>
           <div class="flex flex-wrap -mx-3 mb-2">
             <div class="w-full md:w-1/2 px-3 mb-6">
-              <label class="block tracking-wide text-green-200 text-xl mb-2" for="grid-city">
+              <label for="mce-NAME" class="block tracking-wide text-green-200 text-xl mb-2">
                 Tu nombre
               </label>
-              <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Ej.: Ana Ortiz">
+              <input id="mce-NAME" name="NAME" type="text" placeholder="Ej.: Ana Ortiz" required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             </div>
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <label class="block tracking-wide text-green-200 text-xl mb-2" for="grid-state">
+              <label for="mce-LOCALE" class="block tracking-wide text-green-200 text-xl mb-2">
                 Tu Idioma
               </label>
               <div class="relative">
-                <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                  <option value="Spanish">Castellano</option>
-                  <option value="English">Inglés</option>
+                <select name="LOCALE" required id="mce-LOCALE" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <option value="es">Castellano</option>
+                  <option value="en">English</option>
                 </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                   <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -359,20 +349,25 @@
               </div>
             </div>
           </div>
-
-          <button class="w-full mx-auto lg:mx-0 bg-white text-xl text-gray-800 font-bold py-4 px-8 rounded">Apúntate a la lista</button>
+          <button type="submit" class="w-full mx-auto lg:mx-0 bg-white text-xl text-gray-800 font-bold py-4 px-8 rounded">Apúntate a la lista</button>
         </form>
+        <!--End mc_embed_signup-->
       </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(".js-scrollTo").on('click', function(e) {
-         e.preventDefault();
-         var target = $(this).attr('href');
-         $('html, body').animate({
-           scrollTop: ($(target).offset().top)
-         }, 500);
+        e.preventDefault();
+        var $element = $(this)
+        var target = $element.attr('href');
+        var plan = $element.data('plan');
+        if (plan) {
+
+        }
+        $('html, body').animate({
+          scrollTop: ($(target).offset().top)
+        }, 500);
       });
     </script>
   </body>
